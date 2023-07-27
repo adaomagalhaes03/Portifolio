@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Final</title>
+    <link rel="stylesheet" href="../dist/output.css ">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="flex flex-row min-h-screen overflow-hidden">
+
+    <div s class=" bg-gray-100 w-10 lg:w-72 min-h-screen
+    border-r-2  md:none" style="border-color:#EBC3E5;">
+    
+    <div class="flex flex-none w-full justify-center items-center lg:py-16 text-center ">
+      <div class=" text-bold font-semibold text-center items-center   text-2xl  lg:visible invisible animate-pulse ">
+        ADAM<span class="text-pink-400">.</span>DEV
+          
+     
+      </div>
+    </div> 
+
+    <div> 
+      <nav class="visible lg:invisible  flex w-full mt-40 ">
+        <ul class="">
+          <li class="list-inside ml-2 mb-6 w-12 ">
+              <a href="#" class="flex
+               justify-start">
+                <img src="img/botao-de-inicio.png" class="w-6 h-6 object-contain" alt="home">
+          </a>
+            </li> 
+
+            <li class="list-inside ml-2 mb-6 w-12 ">
+              <a href="#" class="flex
+               justify-start">
+                <img src="img/do-utilizador.png" class="w-6 h-6 object-contain animate-pulse text-white" alt="home">
+          </a>
+            </li> 
+
+            <li class="list-inside ml-2 mb-6 w-12 ">
+              <a href="#" class="flex
+               justify-start ">
+                <img src="img/text-message.png" class="w-6 h-6 object-contain" alt="home">
+          </a>
+            </li> 
+           
+        </ul>
+      </nav>
+
+      <nav class="lg:visible invisible flex w-full -mt-80 ">
+        <ul class="text-left text-base">
+          <li class="list-inside border-b-2 font-bold w-52 border-t-indigo-600 mx-8 mb-6 border-opacity-25 pb-3 text-gray-900 hover:text-gray-500">
+            <a href="" class="flex justify-start">
+              <img src="img/botao-de-inicio.png" class="h-6 w-6 mr-2  object-contain hover:text-gray-500" alt="">Dashboard
+          </a>
+
+          <li class="list-inside border-b-2 font-bold w-52 border-t-indigo-600 mx-8 mb-6 border-opacity-50 pb-3 text-gray-900 hover:text-gray-500">
+            <a href="" class="flex justify-start">
+              <img src="img/do-utilizador.png" class="h-6 w-6 mr-2  object-contain hover:text-gray-500" alt="">About
+          </a>
+
+          <li class="list-inside border-b-2 font-bold w-52 border-t-indigo-600 mx-8 mb-6 border-opacity-25 pb-3 text-gray-900 hover:text-gray-500">
+            <a href="" class="flex justify-start">
+              <img src="img/text-message.png" class="h-6 w-6 mr-2  object-contain hover:text-gray-500" alt="">Conctact
+          </a>
+
+          </li>
+        </ul>
+      </nav>
+      <p class="lg:visible invisible text-center text-xs font-medium text-gray-400 w-full ">
+        Copyright &copy; 2023 adam@dev.ao
+      </p>
+    </div>
+    
+    </div>
+
+
+
+    <div class="bg-gray-50  flex-grow w-full min-h-screen ">
+       
+      <div class="container mx-auto mt-6 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-24">
+        <div class="grid justify-center items-center order-1 col-span-1">
+         
+          <img src="img/my-adam.png" class="lg:h-80 md:h-64 h-40 rounded-full " alt="">
+         </div>
+
+      <div class="mt-8 md:mt-0 lg:justify-end col-span-2  ">
+        
+        <h1 class="text-3xl text-gray-700 mt-32  cursor-pointer  hover:text-gray-900 text-center md:text-left font-bold" id="typewriter"> </h1>
+          <p class="text-xl text-left md:text-left text-gray-500 mt-2 ">Tenho 2 anos de experiência no mercado Angolano com as seguintes linguagens: html , css , javascript , Tailwindss e Blazor!</p>
+      
+          <div class="flex flex-wrap justify-start gap-2 py-4 ">
+              <ul class="flex space-x-2 " >
+                <li>
+                  <a href="https://www.linkedin.com/in/ad%C3%A3o-magalh%C3%A3es-875593241/">
+                    <img src="img/linkedin.png" class=" object-contain w-6 h-6 " title="linkedin" alt="">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://github.com/adaomagalhaes03">
+                    <img src="img/github.png" class=" object-contain w-6 h-6 " title="github" alt="">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.facebook.com/Adaomagalhaes03">
+                    <img src="img/facebook.png" class=" object-contain w-6 h-6 " title="facebook" alt="">
+                  </a>
+                </li>
+            
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <script>
+   
+
+  const text = "Olá , eu sou Adão Magalhães , sou desenvolvedor web e Ux designer!";
+  const delay = 100; 
+
+  function typeWriterEffect(element, text, delay) {
+    let i = 0;
+
+    function type() {
+      if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, delay);
+      }
+    }
+
+    type();
+  }
+
+  const typewriterElement = document.getElementById("typewriter");
+  typeWriterEffect(typewriterElement, text, delay);
+
+
+  </script>
+</body>
+</html>
